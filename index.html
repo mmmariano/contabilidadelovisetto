@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilidade Lovisetto | Estratégia e Respeito</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
- 
-    </style>
+    <title>Contabilidade Lovisetto: Aqui a contabilidade não é só obrigação. É estratégia.</title>
+    
+    <!-- Ícone da Aba (Favicon) -->
     <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Fontes e Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
@@ -20,128 +24,167 @@
             <h1>Contabilidade Lovisetto</h1>
         </div>
         <nav class="nav-links">
+            <a href="#sobre">Pagina Inicial</a>
             <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
             <a href="#mei">MEI</a>
-            <a href="javascript:void(0)" onclick="openModal()" class="btn-principal" style="padding: 10px 20px;">Cadastro</a>
+            <a href="#solucoes">Soluções</a>
+            <button onclick="openModal()" class="btn-principal btn-nav">Cadastro</button>
         </nav>
     </header>
+
 <section class="hero">
     <div class="hero-container">
-        <!-- Logo Central da Hero -->
         <img src="logo.png" alt="Contabilidade Lovisetto" class="hero-logo-img">
-        
-        <h2>Contabilidade Lovisetto</h2>
-        
+        <h2 class="hero-title">Contabilidade Lovisetto</h2>
         <div class="hero-divider"></div>
-
-        <p>
+        <p class="hero-phrase">
             Cuide do seu cliente e deixa que a parte "chata" a gente faz!<br>
             <strong>Venha fazer parte desse time!</strong>
         </p>
-
         <button class="btn-principal" onclick="openModal()">
             👉 Cadastre-se agora e receba atendimento
         </button>
     </div>
-
-    <!-- Indicador visual de seriedade e continuidade 
-    <div class="scroll-indicator">
-        <span>Explore</span>
-        <div class="scroll-line"></div>
-    </div>-->
 </section>
+
+
 
     <section id="sobre">
         <div class="section-title">
             <h2>Sua contabilidade pode ser simples, estratégica e sem dor de cabeça</h2>
-            <p style="margin-top: 20px; color: var(--cinza);">Cuidamos da sua empresa para que você foque no que realmente importa: vender, crescer e lucrar.</p>
+            <p>Cuidamos da sua empresa para que você foque no que realmente importa: vender, crescer e lucrar.</p>
         </div>
         <div class="cards">
             <div class="card">
                 <i class="fas fa-handshake"></i>
                 <h3>Atendimento Humano</h3>
-                <p>Você não fala com robôs. Aqui temos acompanhamento contábil de verdade.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Estratégia Real</h3>
-                <p>Aqui a contabilidade não é só obrigação. Analisamos números para orientar decisões seguras.</p>
+                <p>Acompanhamento contábil de verdade. Você fala com quem entende do seu negócio.</p>
             </div>
             <div class="card">
                 <i class="fas fa-brain"></i>
                 <h3>Sem "Contabilês"</h3>
-                <p>Você não precisa entender de contabilidade. Você precisa de quem entenda do seu negócio.</p>
+                <p>Você não precisa entender de contabilidade. Precisa de resultados e clareza.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Estratégia Real</h3>
+                <p>Analisamos números e orientamos decisões para você crescer com segurança.</p>
             </div>
         </div>
     </section>
 
-    <section style="background: var(--preto-suave);">
+    <section class="dor-section">
+        
         <div class="section-title">
             <h2>Você sente que...</h2>
         </div>
+
         <div class="cards">
-            <div class="card" style="background: #000;">
+            <div class="card card-dark">
+                <i class="fas fa-file-invoice-dollar" style="font-size: 1.5rem;"></i>
                 <p>Paga impostos sem saber se está pagando certo?</p>
             </div>
-            <div class="card" style="background: #000;">
-                <p>Só fala com o contador quando surge um problema?</p>
-            </div>
-            <div class="card" style="background: #000;">
+           <div class="card card-dark">
+    <div class="icon-fix">
+         <i class="fas fa-user-slash"></i>
+    </div>
+    <p>Só fala com o contador quando surge um problema?</p>
+</div>
+            <div class="card card-dark">
+                <i class="fas fa-exclamation-triangle" style="font-size: 1.5rem;"></i>
                 <p>Recebe números, mas não recebe explicações?</p>
             </div>
         </div>
-        <p style="text-align: center; margin-top: 40px; font-size: 1.3rem; color: var(--dourado);">👉 Isso não é acompanhamento contábil. E sua empresa merece mais.</p>
+        <p class="cta-text">👉 Isso não é acompanhamento contábil. E sua empresa merece mais.</p>
     </section>
 
-    <section id="mei">
+   <section id="mei">
         <div class="mei-box">
-            <h2>MEI com problemas? A gente resolve.</h2>
-            <p>Regularizamos seu MEI, organizamos suas obrigações e cuidamos da parte chata para você focar no seu trabalho.</p>
-            <ul class="check-list">
-                <li><i class="fas fa-check-circle"></i> DAS atrasado ou dívida ativa</li>
-                <li><i class="fas fa-check-circle"></i> Falta de emissão de nota fiscal</li>
-                <li><i class="fas fa-check-circle"></i> Medo de multa ou bloqueio do CNPJ</li>
-                <li><i class="fas fa-check-circle"></i> Dificuldade com a Declaração Anual</li>
-            </ul>
-            <button class="btn-principal" style="margin-top: 30px;" onclick="openModal()">Quero atendimento para meu MEI</button>
+            <div class="mei-content">
+                <h2>MEI com problemas? A gente resolve.</h2>
+                
+                <div class="mei-grid">
+                    <div class="mei-text-left">
+                        <p><strong>Se você é MEI e:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Está com DAS atrasado ou dívida ativa</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Perdeu prazos e não sabe como regularizar</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Não emite nota fiscal por falta de tempo</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Tem medo de multa ou bloqueio do CNPJ</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Não entende as mensagens da Receita Federal</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-style: italic; color: var(--azul-escuro);">
+                            👉 <strong>Você não está sozinho. Isso é mais comum do que parece.</strong>
+                        </p>
+                    </div>
+
+                    <div class="mei-text-right">
+                        <h3>Está com o MEI em atraso?</h3>
+                        <p>Não deixe a dívida virar um problema maior. Analisamos sua situação, verificamos débitos, parcelamentos possíveis e orientamos a melhor forma de regularizar seu MEI com segurança.</p>
+                        
+                        <div class="cta-mei-box">
+                            <p><strong>Quer regularizar seu MEI ou organizar sua rotina?</strong></p>
+                            <p style="font-size: 0.9rem; margin-bottom: 15px;">Preencha o formulário e receba um atendimento inicial para entender sua situação.</p>
+                            <button class="btn-principal" onclick="openModal()">👉 Cadastre-se para análise da sua situação</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section>
+   <section id="solucoes">
         <div class="section-title">
             <h2>Nossas Soluções</h2>
+            <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
+                Acompanhamos sua empresa de perto, analisando números, orientando decisões e ajudando você a crescer com segurança.
+            </p>
         </div>
         <div class="cards">
             <div class="card">
-                <h3>Abertura e Encerramento</h3>
-                <p>Suporte completo para abrir, encerrar ou alterar empresas do Simples Nacional.</p>
-            </div>
-            <div class="card">
+                <i class="fas fa-file-contract" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
                 <h3>Planejamento Tributário</h3>
-                <p>Escolha do melhor regime para sua empresa pagar o mínimo possível dentro da lei.</p>
+                <p>Escolha do melhor regime (Simples Nacional, etc) para pagar o mínimo de imposto dentro da lei.</p>
             </div>
             <div class="card">
+                <i class="fas fa-wallet" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
                 <h3>Organização Financeira</h3>
-                <p>Suporte para decisões importantes e análise de saúde empresarial.</p>
+                <p>Suporte completo para organizar suas contas e entender para onde cada centavo do seu lucro está indo.</p>
             </div>
+            <div class="card">
+                <i class="fas fa-user-shield" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Imposto de Renda (IRPF)</h3>
+                <p>Declaração segura e estratégica para você evitar a malha fina e garantir a maior restituição possível.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Suporte Decisório</h3>
+                <p>Não entregamos apenas guias. Oferecemos suporte real para as decisões importantes do seu negócio.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <p><i class="fas fa-comment-dots" style="color: var(--dourado);"></i> <strong>Atendimento claro, sem “contabilês”:</strong> Falamos a sua língua para que você entenda tudo.</p>
         </div>
     </section>
 
     <footer>
-        <div class="logo">
-            <h1 style="margin: 0 auto;">Contabilidade Lovisetto</h1>
+        <div class="footer-container">
+            <h2 class="footer-logo">Contabilidade Lovisetto</h2>
+            <p>Atendimento em qualquer horário. <strong>Também trabalhamos à noite!</strong></p>
+            <p class="footer-phone"><i class="fab fa-whatsapp"></i> (11) 97419-5313</p>
+            
+            <div class="social-icons">
+                <a href="https://www.instagram.com/contabilidade.lovisetto/#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5511974195313" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            
+            <p class="copyright" style="color: white; opacity: 0.8; font-size: 0.8rem;">
+    © 2026 Contabilidade Lovisetto - Todos os direitos reservados. 
+    <br> 
+    Desenvolvido por <a href="https://www.trywebdesign.com.br/" style="color: var(--dourado); text-decoration: none; font-weight: bold;">TryWebDesign</a>
+</p>
         </div>
-        <p style="margin-top: 20px;">Atendimento em qualquer horário. Também trabalhamos à noite!</p>
-        <p style="color: var(--dourado); font-weight: bold; font-size: 1.2rem; margin: 10px 0;">(11) 9.7419-5313</p>
-        
-        <div class="social-icons">
-            <a href="https://www.instagram.com/contabilidade.lovisetto/#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://wa.me/5511974195313" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        
-        <p style="font-size: 0.8rem; color: var(--cinza);">© 2026 Criação Lovisetto - Todos os direitos reservados.</p>
     </footer>
 
     <!-- Botão Whatsapp flutuante -->
@@ -154,12 +197,12 @@
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal()">&times;</span>
             <h3>Atendimento Personalizado</h3>
-            <p style="font-size: 0.9rem; text-align: center; margin-bottom: 20px;">Deixe seus dados e identificaremos oportunidades de melhoria para seu negócio.</p>
+            <p>Deixe seus dados e identificaremos oportunidades de melhoria para seu negócio.</p>
             
             <form id="formCadastro" onsubmit="handleForm(event)">
                 <div class="form-group">
                     <label>Nome Completo</label>
-                    <input type="text" id="nome" required placeholder="Seu nome">
+                    <input type="text" id="nome" required placeholder="Ex: João Silva">
                 </div>
                 <div class="form-group">
                     <label>E-mail</label>
@@ -167,39 +210,12 @@
                 </div>
                 <div class="form-group">
                     <label>WhatsApp</label>
-                    <input type="tel" id="whatsapp" required placeholder="(00) 00000-0000">
+                    <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999">
                 </div>
                 <button type="submit" class="btn-principal" style="width: 100%;">Quero receber atendimento</button>
             </form>
         </div>
     </div>
-
-    <script>
-        function openModal() {
-            document.getElementById('modalCadastro').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // trava o scroll
-        }
-
-        function closeModal() {
-            document.getElementById('modalCadastro').style.display = 'none';
-            document.body.style.overflow = 'auto'; // libera o scroll
-        }
-
-        function handleForm(event) {
-            event.preventDefault();
-            const nome = document.getElementById('nome').value;
-            alert('Obrigado, ' + nome + '! Seus dados foram enviados. Entraremos em contato em breve via WhatsApp.');
-            closeModal();
-            document.getElementById('formCadastro').reset();
-        }
-
-        // Fechar modal ao clicar fora dele
-        window.onclick = function(event) {
-            const modal = document.getElementById('modalCadastro');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
