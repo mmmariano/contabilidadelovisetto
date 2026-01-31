@@ -283,3 +283,104 @@ header .logo h1 {
 .whatsapp-float i {
     text-decoration: none !important;
 }
+
+/* --- ESTILO DO RODAPÉ MELHORADO --- */
+footer {
+    background-color: #001f3f; /* Seu azul marinho */
+    color: white;
+    padding: 60px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para funcionar no celular */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo {
+    color: #d4af37; /* Dourado */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-col h3 {
+    color: #d4af37;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* Estrelas do Google */
+.google-rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stars {
+    color: #f1c40f; /* Amarelo Google */
+    font-size: 1.2rem;
+}
+
+.rating-text {
+    font-size: 0.85rem;
+}
+
+.maps-link {
+    color: #d4af37;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.certificacao {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.85rem !important;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajuste das redes sociais no rodapé */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d4af37;
+}
