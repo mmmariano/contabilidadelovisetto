@@ -1,6 +1,4 @@
-# Bloqueia o acesso a arquivos sensíveis se houver
 User-agent: *
 Allow: /
 
-# Link para o seu Sitemap (ajuste o domínio abaixo)
-Sitemap: https://www.trywebdesign.com.br/sitemap.xml
+Sitemap: https://contabilidadelovisetto.com.br/sitemap.xml

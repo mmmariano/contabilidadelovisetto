@@ -1,6 +1,9 @@
-# Bloqueia o acesso a arquivos sensíveis se houver
-User-agent: *
-Allow: /
-
-# Link para o seu Sitemap (ajuste o domínio abaixo)
-Sitemap: https://www.trywebdesign.com.br/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://contabilidadelovisetto.com.br/</loc>
+      <lastmod>2026-01-31</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
+</urlset>
