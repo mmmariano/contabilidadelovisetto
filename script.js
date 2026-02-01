@@ -14,55 +14,53 @@
         const modal = document.getElementById('modalCadastro');
         if (event.target == modal) closeModal();
     }
+    
+async function handleForm(event) {
+    event.preventDefault();
 
-    // FUNÇÃO QUE CONECTA COM O SEU PHP NA HOSTINGER
-    async function handleForm(event) {
-        event.preventDefault(); // Impede a página de recarregar
+    const btn = event.target.querySelector('button');
+    const originalText = btn.innerText;
 
-        const btn = event.target.querySelector('button');
-        const originalText = btn.innerText;
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const whatsapp = document.getElementById('whatsapp').value;
 
-        // Captura os valores dos campos
-        const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
-        const whatsapp = document.getElementById('whatsapp').value;
+    btn.innerText = "Enviando...";
+    btn.disabled = true;
 
-        // Feedback visual: desabilita o botão enquanto envia
-        btn.innerText = "Enviando...";
-        btn.disabled = true;
+    const dadosParaEnviar = {
+        nome: nome,
+        email: email,
+        telefone: whatsapp
+    };
 
-        const dadosParaEnviar = {
-            nome: nome,
-            email: email,
-            telefone: whatsapp // Enviamos como 'telefone' para bater com seu PHP
-        };
+    try {
+        const resposta = await fetch('https://vrindabhumi.org/enviar.php', {
+            method: 'POST',
+            mode: 'cors', // Força o modo CORS
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dadosParaEnviar)
+        });
 
-        try {
-            // AQUI VOCÊ CONECTA COM O SEU LINK DA HOSTINGER
-            const resposta = await fetch('https://vrindabhumi.org/enviar.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(dadosParaEnviar)
-            });
+        // Primeiro lemos como texto para ver se não há erros de PHP misturados
+        const textoParaDebug = await resposta.text();
+        console.log("Resposta bruta do servidor:", textoParaDebug);
 
-            const resultado = await resposta.json();
+        const resultado = JSON.parse(textoParaDebug);
 
-            if (resultado.status === "sucesso") {
-                alert('✅ Sucesso, ' + nome + '! Recebemos seu interesse. Entraremos em contato em breve.');
-                document.getElementById('formCadastro').reset();
-                closeModal();
-            } else {
-                alert('❌ Erro do servidor: ' + resultado.message);
-            }
-
-        } catch (error) {
-            console.error('Erro ao enviar:', error);
-            alert('❌ Erro na conexão. Verifique se o arquivo PHP está online.');
-        } finally {
-            // Restaura o botão
-            btn.innerText = originalText;
-            btn.disabled = false;
+        if (resultado.status === "sucesso") {
+            alert('✅ Sucesso! Recebemos seu interesse.');
+            document.getElementById('formCadastro').reset();
+            closeModal();
+        } else {
+            alert('❌ Erro: ' + resultado.message);
         }
+
+    } catch (error) {
+        console.error('Erro detalhado:', error);
+        alert('❌ Erro na conexão. Tente pelo WhatsApp lateral.');
+    } finally {
+        btn.innerText = originalText;
+        btn.disabled = false;
     }
+}
