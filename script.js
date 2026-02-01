@@ -39,7 +39,7 @@
 
         try {
             // AQUI VOCÊ CONECTA COM O SEU LINK DA HOSTINGER
-            const resposta = await fetch('https://vrindabhumi.org/enviar.php', {
+            const resposta = await fetch('https://vrindabhumi.org/enviar2.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
