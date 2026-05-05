@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade Lovisetto: Aqui a contabilidade não é só obrigação. É estratégia.</title>
+    
+    <!-- Ícone da Aba (Favicon) -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Fontes e Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- SEO Básico -->
+<meta name="description" content="Contabilidade Lovisetto: Aqui a contabilidade não é só obrigação. É estratégia.">
+<meta name="keywords" content="contabilidade, MEI, imposto de renda, gestão financeira, São Paulo SP">
+<link rel="canonical" href="https://www.contabilidadelovisetto.com.br">
+
+<!-- Social (WhatsApp, Instagram, etc) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contabilidade Lovisetto | Estratégia e Resultado">
+<meta property="og:description" content="Cuidamos da burocracia para você focar no lucro. Especialistas em MEI e Simples Nacional.">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://www.contabilidadelovisetto.com.br">
+
+<!-- Script de Empresa Local (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Contabilidade Lovisetto",
+  "image": "https://www.contabilidadelovisetto.com.br/logo.png",
+  "telephone": "+55-11-97419-5313",
+  "email": "contato@lovisetto.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "RUA_AQUI",
+    "addressLocality": "CIDADE_AQUI",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+/* ============================================
+   SEÇÃO IRPF — ESTILOS DEDICADOS
+   ============================================ */
+
+.irpf-section {
+    background: linear-gradient(160deg, #0a1628 0%, #0d2040 50%, #0a1628 100%);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.irpf-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.irpf-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(212,175,55,0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.irpf-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cabeçalho da seção */
+.irpf-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.irpf-tag {
+    display: inline-block;
+    background: var(--dourado, #d4af37);
+    color: #0a1628;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.irpf-header h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.irpf-header h2 span {
+    color: var(--dourado, #d4af37);
+}
+
+.irpf-header .irpf-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.irpf-gold-line {
+    width: 60px;
+    height: 3px;
+    background: var(--dourado, #d4af37);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+/* Grid principal */
+.irpf-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .irpf-main-grid { grid-template-columns: 1fr; }
+}
+
+/* Card de benefícios */
+.irpf-benefits-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 16px;
+    padding: 35px 30px;
+}
+
+.irpf-benefits-card h3 {
+    color: var(--dourado, #d4af37);
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.irpf-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+}
+
+.irpf-check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.97rem;
+    line-height: 1.5;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.irpf-check-list li:last-child { border-bottom: none; }
+
+.irpf-check-list li i {
+    color: var(--dourado, #d4af37);
+    margin-top: 3px;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.irpf-highlight-box {
+    background: rgba(212,175,55,0.1);
+    border-left: 3px solid var(--dourado, #d4af37);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.93rem;
+    line-height: 1.6;
+}
+
+.irpf-highlight-box strong { color: var(--dourado, #d4af37); }
+
+/* Card de público-alvo */
+.irpf-audience-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 16px;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.irpf-audience-card h3 {
+    color: var(--dourado, #d4af37);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.audience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.audience-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.97rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.audience-list li:last-child { border-bottom: none; }
+
+.audience-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--dourado, #d4af37);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Depoimentos */
+.irpf-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 900px) { .irpf-reviews-grid { grid-template-columns: 1fr; } }
+@media (min-width: 601px) and (max-width: 900px) { .irpf-reviews-grid { grid-template-columns: 1fr 1fr; } }
+
+.irpf-review-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 24px 22px;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.irpf-review-card:hover {
+    border-color: rgba(212,175,55,0.35);
+    transform: translateY(-4px);
+}
+
+.irpf-review-card::before {
+    content: '"';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--dourado, #d4af37);
+    opacity: 0.3;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+.review-stars {
+    color: var(--dourado, #d4af37);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    color: rgba(255,255,255,0.82);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.review-author {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Banner CTA final da seção */
+.irpf-cta-banner {
+    background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(212,175,55,0.05) 100%);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 18px;
+    padding: 40px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.irpf-cta-text h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.irpf-cta-text h3 span { color: var(--dourado, #d4af37); }
+
+.irpf-cta-text p {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.93rem;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+.irpf-urgency {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: 6px;
+}
+
+.irpf-urgency i {
+    color: var(--dourado, #d4af37);
+    margin-right: 5px;
+}
+
+.btn-irpf-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25d366 0%, #1da851 100%);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 16px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+}
+
+.btn-irpf-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(37,211,102,0.5);
+}
+
+.btn-irpf-cta i { font-size: 1.25rem; }
+
+@media (max-width: 620px) {
+    .irpf-cta-banner {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .irpf-cta-text p { margin: 0 auto; }
+}
+</style>
+
+</head>
+<body>
+<script defer src="/_vercel/insights/script.js"></script>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Contabilidade Lovisetto">
+            <h1>Contabilidade Lovisetto</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Pagina Inicial</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#mei">MEI</a>
+            <a href="#irpf">IRPF</a>
+            <a href="#solucoes">Soluções</a>
+            <button onclick="openModal()" class="btn-principal btn-nav">Cadastro</button>
+        </nav>
+    </header>
+
+<section class="hero">
+    <div class="hero-container">
+        <img src="logo.png" alt="Contabilidade Lovisetto" class="hero-logo-img">
+        <h2 class="hero-title">Contabilidade Lovisetto</h2>
+        <div class="hero-divider"></div>
+        <p class="hero-phrase">
+            Cuide do seu cliente e deixa que a parte "chata" a gente faz!<br>
+            <strong>Venha fazer parte desse time!</strong>
+        </p>
+        <button class="btn-principal" onclick="openModal()">
+            👉 Cadastre-se agora e receba atendimento
+        </button>
+    </div>
+</section>
+
+
+
+    <section id="sobre">
+        <div class="section-title">
+            <h2>Sua contabilidade pode ser simples, estratégica e sem dor de cabeça</h2>
+            <p>Cuidamos da sua empresa para que você foque no que realmente importa: vender, crescer e lucrar.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-handshake"></i>
+                <h3>Atendimento Humano</h3>
+                <p>Acompanhamento contábil de verdade. Você fala com quem entende do seu negócio.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Sem "Contabilês"</h3>
+                <p>Você não precisa entender de contabilidade. Precisa de resultados e clareza.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Estratégia Real</h3>
+                <p>Analisamos números e orientamos decisões para você crescer com segurança.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dor-section">
+        
+        <div class="section-title">
+            <h2>Você sente que...</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card card-dark">
+                <i class="fas fa-file-invoice-dollar" style="font-size: 1.5rem;"></i>
+                <p>Paga impostos sem saber se está pagando certo?</p>
+            </div>
+           <div class="card card-dark">
+    <div class="icon-fix">
+         <i class="fas fa-user-slash"></i>
+    </div>
+    <p>Só fala com o contador quando surge um problema?</p>
+</div>
+            <div class="card card-dark">
+                <i class="fas fa-exclamation-triangle" style="font-size: 1.5rem;"></i>
+                <p>Recebe números, mas não recebe explicações?</p>
+            </div>
+        </div>
+        <p class="cta-text">👉 Isso não é acompanhamento contábil. E sua empresa merece mais.</p>
+    </section>
+
+   <section id="mei">
+        <div class="mei-box">
+            <div class="mei-content">
+                <h2>MEI com problemas? A gente resolve.</h2>
+                
+                <div class="mei-grid">
+                    <div class="mei-text-left">
+                        <p><strong>Se você é MEI e:</strong></p>
+                        <ul class="check-list">
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Está com DAS atrasado ou dívida ativa</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Perdeu prazos e não sabe como regularizar</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Não emite nota fiscal por falta de tempo</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Tem medo de multa ou bloqueio do CNPJ</li>
+                            <li><i class="fas fa-exclamation-circle" style="color: #ff4d4d;"></i> Não entende as mensagens da Receita Federal</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-style: italic; color: var(--azul-escuro);">
+                            👉 <strong>Você não está sozinho. Isso é mais comum do que parece.</strong>
+                        </p>
+                    </div>
+
+                    <div class="mei-text-right">
+                        <h3>Está com o MEI em atraso?</h3>
+                        <p>Não deixe a dívida virar um problema maior. Analisamos sua situação, verificamos débitos, parcelamentos possíveis e orientamos a melhor forma de regularizar seu MEI com segurança.</p>
+                        
+                        <div class="cta-mei-box">
+                            <p><strong>Quer regularizar seu MEI ou organizar sua rotina?</strong></p>
+                            <p style="font-size: 0.9rem; margin-bottom: 15px;">Preencha o formulário e receba um atendimento inicial para entender sua situação.</p>
+                            <button class="btn-principal" onclick="openModal()">👉 Cadastre-se para análise da sua situação</button>
+                        </div>
+                    </div>
+                </div>
+				<section class="dasn-premium">
+    <div class="dasn-wrapper">
+        <div class="dasn-intro">
+            <span class="tag-especial">Obrigação Anual MEI</span>
+            <h2 class="dasn-main-title">DASN-SIMEI: O que você precisa saber</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="dasn-grid-premium">
+            <!-- Card 1: O que é -->
+            <div class="dasn-card-p">
+                <div class="card-icon"><i class="fas fa-file-invoice"></i></div>
+                <h3>O que é a DASN-SIMEI?</h3>
+                <p>A Declaração Anual do Simples Nacional para o Microempreendedor Individual (DASN-SIMEI) é a obrigação acessória anual em que o MEI informa:</p>
+                <ul class="list-p">
+                    <li>Receita bruta total do ano-calendário anterior</li>
+                    <li>Receita com comércio/indústria</li>
+                    <li>Receita com prestação de serviços</li>
+                    <li>Se houve empregado no período</li>
+                </ul>
+                <div class="prazo-box">
+                    <strong>Prazo de entrega:</strong> até 31 de maio de cada ano
+                </div>
+            </div>
+
+            <!-- Card 2: Quem deve -->
+            <div class="dasn-card-p">
+                <div class="card-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Quem está obrigado a entregar?</h3>
+                <p>Todos os MEIs que:</p>
+                <ul class="list-p">
+                    <li>Estejam ativos;</li>
+                    <li>Estejam baixados (caso tenham sido encerrados no ano);</li>
+                    <li>Não tenham tido faturamento (entrega zerada é obrigatória).</li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Penalidades -->
+            <div class="dasn-card-p alert-card">
+                <div class="card-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <h3>ALGUMAS PENALIDADES POR ERRO NA DASN-SIMEI:</h3>
+                <ul class="list-p">
+                    <li>Pode gerar desenquadramento indevido</li>
+                    <li>Pode impactar o IRPF do titular</li>
+                    <li>Desenquadramento retroativo</li>
+                    <li>Recolhimento como Simples Nacional</li>
+                    <li>Multa + juros, entre outros...</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Banner de Conversão -->
+        <div class="dasn-banner-cta">
+            <div class="cta-content">
+                <p>"MEI, não deixe para última hora! A multa começa em R$ 50,00. Fale conosco e regularize hoje."</p>
+                <span>Clique no botão do WhatsApp para atendimento com nossa equipe!</span>
+            </div>
+            <a href="https://wa.me/5511974195313?text=Vim%20pelo%20site" class="btn-cta-gold">
+    <i class="fab fa-whatsapp"></i> Regularizar meu MEI agora
+</a>
+        </div>
+    </div>
+</section>
+            </div>
+        </div>
+    </section>
+
+   <!-- ============================================
+        SEÇÃO IRPF — IMPOSTO DE RENDA
+        ============================================ -->
+   <section id="irpf" class="irpf-section">
+    <div class="irpf-wrapper">
+
+        <!-- Cabeçalho -->
+        <div class="irpf-header">
+            <span class="irpf-tag">Pessoa Física</span>
+            <h2>Imposto de Renda <span>sem complicação</span><br>e com total segurança</h2>
+            <p class="irpf-subtitle">Evite erros, multas e dores de cabeça com a Receita Federal. Conte com um serviço profissional, ágil e focado em garantir que sua declaração seja feita corretamente — e, sempre que possível, pagando menos imposto dentro da lei.</p>
+            <div class="irpf-gold-line"></div>
+        </div>
+
+        <!-- Grid: Benefícios + Para quem é -->
+        <div class="irpf-main-grid">
+
+            <!-- Card: Por que nos escolher -->
+            <div class="irpf-benefits-card">
+                <h3><i class="fas fa-star" style="margin-right:8px;"></i>Por que escolher nosso serviço?</h3>
+                <ul class="irpf-check-list">
+                    <li><i class="fas fa-check-circle"></i> Atendimento personalizado, de acordo com sua realidade</li>
+                    <li><i class="fas fa-check-circle"></i> Análise completa para evitar inconsistências</li>
+                    <li><i class="fas fa-check-circle"></i> Identificação de oportunidades legais de economia</li>
+                    <li><i class="fas fa-check-circle"></i> Envio seguro e dentro do prazo</li>
+                    <li><i class="fas fa-check-circle"></i> Acompanhamento até a restituição</li>
+                    <li><i class="fas fa-check-circle"></i> Suporte contínuo para dúvidas</li>
+                    <li><i class="fas fa-check-circle"></i> Emissão mensal de DARF, se necessário</li>
+                    <li><i class="fas fa-check-circle"></i> Toda documentação impressa e organizada em pastinha</li>
+                </ul>
+                <div class="irpf-highlight-box">
+                    📁 <strong>Diferencial exclusivo:</strong> Entregamos toda a sua documentação impressa e organizada em pastinha da contabilidade — mais segurança e praticidade no seu dia a dia.
+                </div>
+            </div>
+
+            <!-- Card: Para quem é + Tranquilidade -->
+            <div class="irpf-audience-card">
+                <h3><i class="fas fa-users" style="margin-right:8px;"></i>Para quem é esse serviço?</h3>
+                <ul class="audience-list">
+                    <li><span class="audience-dot"></span> Pessoas físicas com renda acima do limite de obrigatoriedade</li>
+                    <li><span class="audience-dot"></span> Quem teve mais de uma fonte de renda</li>
+                    <li><span class="audience-dot"></span> Autônomos e profissionais liberais</li>
+                    <li><span class="audience-dot"></span> Quem possui bens, investimentos ou imóveis</li>
+                    <li><span class="audience-dot"></span> Quem quer evitar cair na malha fina</li>
+                </ul>
+
+                <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 22px;">
+                    <h3 style="color: var(--dourado, #d4af37); font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px;">
+                        <i class="fas fa-shield-alt" style="margin-right: 8px;"></i>Tranquilidade do início ao fim
+                    </h3>
+                    <p style="color: rgba(255,255,255,0.78); font-size: 0.94rem; line-height: 1.7; margin: 0;">
+                        Cuidamos de todo o processo para você: desde a organização das informações até o acompanhamento da sua restituição. Seu imposto tratado com <strong style="color:#fff;">responsabilidade, estratégia e atenção aos detalhes</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Depoimentos -->
+        <div style="text-align:center; margin-bottom: 28px;">
+            <p style="color: var(--dourado, #d4af37); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;">O que os clientes dizem</p>
+        </div>
+        <div class="irpf-reviews-grid">
+            <div class="irpf-review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Fiquei muito tranquila com o atendimento. Foi rápido, claro e ainda consegui uma restituição maior do que esperava!"</p>
+                <p class="review-author">— Cliente satisfeita</p>
+            </div>
+            <div class="irpf-review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Eu sempre tive medo de cair na malha fina, mas todo o processo foi explicado e feito com muito cuidado. Recomendo demais!"</p>
+                <p class="review-author">— Cliente satisfeito</p>
+            </div>
+            <div class="irpf-review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Praticidade total! Resolvi tudo pelo WhatsApp e sem dor de cabeça. Atendimento excelente."</p>
+                <p class="review-author">— Cliente recorrente</p>
+            </div>
+        </div>
+
+        <!-- Banner CTA -->
+        <div class="irpf-cta-banner">
+            <div class="irpf-cta-text">
+                <h3>Não deixe para a última hora.<br><span>Faça sua declaração com quem entende.</span></h3>
+                <p>Quanto antes você declarar, maiores as chances de receber sua restituição mais rápido e evitar imprevistos. Atendimento rápido e sem complicação — via WhatsApp ou online.</p>
+                <p class="irpf-urgency"><i class="fas fa-clock"></i> Garanta tranquilidade e evite problemas futuros, sem perder nada!</p>
+            </div><a href="https://wa.me/5511974195313?text=Vim%20pelo%20site" class="btn-irpf-cta" target="_blank">
+    <i class="fab fa-whatsapp"></i> Quero fazer minha declaração com segurança
+</a>
+        </div>
+
+    </div>
+   </section>
+   <!-- FIM SEÇÃO IRPF -->
+
+   <section id="solucoes">
+        <div class="section-title">
+            <h2>Nossas Soluções</h2>
+            <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
+                Acompanhamos sua empresa de perto, analisando números, orientando decisões e ajudando você a crescer com segurança.
+            </p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-file-contract" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Planejamento Tributário</h3>
+                <p>Escolha do melhor regime (Simples Nacional, etc) para pagar o mínimo de imposto dentro da lei.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-wallet" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Organização Financeira</h3>
+                <p>Suporte completo para organizar suas contas e entender para onde cada centavo do seu lucro está indo.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-shield" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Imposto de Renda (IRPF)</h3>
+                <p>Declaração segura e estratégica para você evitar a malha fina e garantir a maior restituição possível.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--dourado); margin-bottom: 15px;"></i>
+                <h3>Suporte Decisório</h3>
+                <p>Não entregamos apenas guias. Oferecemos suporte real para as decisões importantes do seu negócio.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <p><i class="fas fa-comment-dots" style="color: var(--dourado);"></i> <strong>Atendimento claro, sem "contabilês":</strong> Falamos a sua língua para que você entenda tudo.</p>
+        </div>
+    </section>
+<footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Coluna 1: Sobre / Certificação -->
+                <div class="footer-col">
+                    <h2 class="footer-logo">Contabilidade Lovisetto & Papelaria Ltda</h2>
+                    <p class="certificacao"><i class="fas fa-certificate"></i> Contador Certificado em São Paulo</p>
+                    <div class="google-rating">
+                        <span class="stars">       ★★★★★</span>
+                        <span class="rating-text">5.0 no Google</span>
+                    </div>
+                </div>
+<!-- Procure por este trecho no seu footer e substitua pelo bloco abaixo -->
+<div class="footer-col">
+    <h3>Onde Estamos</h3>
+    <p><i class="fas fa-map-marker-alt"></i> Rua Cachoeira Dourada, 486<br>
+    Jd. Maria Estela, São Paulo - SP<br>
+    CEP: 04181-120</p>
+    <!-- ABAIXO O LINK ATUALIZADO PARA O NOVO ENDEREÇO -->
+    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cachoeira+Dourada+486+Jardim+Maria+Estela+Sao+Paulo+SP+04181-120" target="_blank" rel="noopener noreferrer" class="maps-link">Ver no Google Maps</a>
+</div>
+                <!-- Coluna 3: Contato e Horário -->
+                <div class="footer-col">
+                    <h3>Fale Conosco</h3>
+                    <p class="footer-phone"><i class="fab fa-whatsapp"></i> (11) 97419-5313</p>
+                    <p><strong>Horário Flexível:</strong> Atendemos em horários especiais, inclusive à noite!</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/contabilidade.lovisetto/#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5511974195313?text=Vim%20pelo%20site" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2026 Contabilidade Lovisetto - Todos os direitos reservados. 
+                    <br> 
+                    Desenvolvido por <a href="https://www.trywebdesign.com.br/" target="_blank">TryWebDesign</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+<a href="https://wa.me/5511974195313?text=Vim%20pelo%20site" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- MODAL DE CADASTRO -->
+    <div class="modal-overlay" id="modalCadastro">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3>Atendimento Personalizado</h3>
+            <p>Deixe seus dados e identificaremos oportunidades de melhoria para seu negócio.</p>
+            
+            <form id="formCadastro" onsubmit="handleForm(event)">
+    <div class="form-group">
+        <label>Nome Completo</label>
+        <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva">
+    </div>
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+    </div>
+    <div class="form-group">
+        <label>WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999">
+    </div>
+    <button type="submit" class="btn-principal" style="width: 100%;">Quero receber atendimento</button>
+</form>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
